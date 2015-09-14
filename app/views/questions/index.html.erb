@@ -1,0 +1,13 @@
+<h1>Questions!</h1>
+<p class="text-center">
+<a class="button" data-dropdown="autoCloseExample" aria-controls="autoCloseExample" aria-expanded="false">Link Dropdown &raquo;</a>
+<div class="circle">
+  <ul id="autoCloseExample" class="f-dropdown" data-dropdown-content tabindex="-1" aria-hidden="true" aria-autoclose="false" tabindex="-1">
+  <% @questions.each do | q | %>
+
+        <li><%= link_to q.title, question_path(q) %></li>
+        <!-- <td><%= q.title %></td> -->
+  <% end %>
+  </ul>
+</div>
+</p>
