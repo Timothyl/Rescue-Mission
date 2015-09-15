@@ -1,0 +1,5 @@
+<%= form_for [@question, @answer] do |a| %>
+  <%= a.label :body %>
+  <%= a.text_field :body %>
+  <%= a.submit "Add answer." %>
+<%- end -%>
