@@ -6,5 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Question.create(title: 'What is life?', description: 'The everlasting search for meaning')
-Question.create(title: 'Why do Avocadoes have such big seeds?', description: 'I need to know asap.')
+Question.create(title: "What is life?", description: "The everlasting search for meaning")
+Question.create(title: "Why do avocadoes have such big seeds?", description: "I need to know asap.")
+Question.create(title: "Where the party at?", description: "I've got my party pants on, but nowhere to go. \xF0\x9F\x98\x9E")

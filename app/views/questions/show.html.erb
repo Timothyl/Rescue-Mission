@@ -1,5 +1,23 @@
 <h1><%= @question.title %></h1>
 
-<h2><%= @question.description %></h2>
+<h3><%= @question.description %></h3>
+<p><%= flash[:notice] %></p>
+<%- if @answer.errors.present? -%>
+  <div class="large-12 alert-box alert" data-alert>
+    <ul>
+      <%- @answer.errors.full_messages.each do |error| -%>
+        <li><%= error %></li>
+      <%- end -%>
+    </ul>
+  </div>
+<%- end -%>
 
+<%= render "answers/form" %>
+
+<% @question.answers.each do | a | %>
+      <li><%= a.body %></li>
+<% end %>
+
+<p class="text-center">
 <%= link_to 'Back.', '/questions' %>
+</p>

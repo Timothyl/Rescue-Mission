@@ -1,5 +1,9 @@
-h1, h2 {
+body {
+  padding-top: 25px;
 
+}
+
+h1, h2, h3 {
   color: grey;
   text-align: center;
 }
